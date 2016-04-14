@@ -12,11 +12,10 @@ public class EchoTest {
 
   @Test
   public void asksForInput() {
-    PrintStream old = System.out;
     System.setOut(new PrintStream(outContent));
     Echo echo = new Echo();
     echo.askForInput();
-    System.setOut(old);
+    System.setOut(null);
     String output = new String(outContent.toByteArray());
     assertTrue(output.contains(">"));
   }

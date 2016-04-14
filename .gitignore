@@ -1,5 +1,4 @@
 whenchanged
 run.sh
-echo/Echo.class
-echo/EchoTest.class
+*.class
 .DS_Store

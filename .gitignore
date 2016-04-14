@@ -1,2 +1,4 @@
 whenchanged
 run.sh
+echo/Echo.class
+echo/EchoTest.class

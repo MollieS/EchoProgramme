@@ -1,2 +1,4 @@
 whenchanged
 run.sh
+*.class
+.DS_Store

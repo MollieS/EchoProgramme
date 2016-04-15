@@ -1,0 +1,7 @@
+language: java
+
+install: true
+
+script: 
+  - javac -cp ./testing/junit-4.12.jar:./testing/hamcrest-core-1.3.jar echo/EchoTest.java echo/Echo.java
+  - java -cp ./testing/junit-4.12.jar:./testing/hamcrest-core-1.3.jar:. org.junit.runner.JUnitCore echo.EchoTest

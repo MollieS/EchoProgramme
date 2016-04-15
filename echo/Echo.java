@@ -2,13 +2,14 @@ package echo;
 
 public class Echo {
 
-  private Console console;
+  private EchoConsole console;
 
-  public Echo(Console console) {
+  public Echo(EchoConsole console) {
     this.console = console;
   }
 
   public void promptInput() {
     console.output(">");
   }
+
 }

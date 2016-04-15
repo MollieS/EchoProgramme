@@ -1,9 +1,10 @@
 package echo;
 
 import org.junit.Test;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 
 import echo.Echo;
+import echo.TestConsole;
 
 public class EchoTest {
   
@@ -12,6 +13,6 @@ public class EchoTest {
     TestConsole testConsole = new TestConsole();
     Echo echo = new Echo(testConsole);
     echo.promptInput();
-    assertEquals(">", testConsole.output());
+    assertEquals(">", testConsole.readOutput());
   }
 }

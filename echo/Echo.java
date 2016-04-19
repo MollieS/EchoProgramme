@@ -10,10 +10,10 @@ public class Echo {
   }
 
   public void promptInput() {
-    console.output(">");
+    console.output("(type quit to exit) >");
   }
 
-  public void repeatInput() {
+  private void repeatInput() {
     promptInput();
     this.input = console.readInput();
     console.output(this.input);
